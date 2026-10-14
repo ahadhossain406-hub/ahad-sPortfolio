@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of a Data Science student." />
+  <title>My Portfolio | Data Science & Software Engineering</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a href="#home" class="logo">My<span>Portfolio.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle color theme">☀️</button>
+        <button class="menu-btn" id="menuBtn"
+          aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container hero" id="home">
+      <div class="reveal">
+        <div class="eyebrow">HELLO, WORLD! 👋</div>
+        <h1>I'm <span class="gradient">MD. Ahad Hossain</span><br />
+          <span id="typing">Data Science Student</span>
+        </h1>
+        <p>
+          I am a Software Engineering student at Daffodil International University, interested in Data Science, Artificial Intelligence (AI), Machine Learning, and Digital Marketing. I enjoy building useful digital solutions, exploring AI-powered technologies, and applying creative marketing strategies to connect businesses with their target audiences. I am passionate about learning new technologies, developing innovative ideas, and combining technical skills with digital marketing to create meaningful real-world impact.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">Explore My Work ↗</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="profile-wrap reveal">
+        <div class="profile" aria-label="Profile illustration">👨‍💻</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container reveal">
+        <h2 class="section-title">About <span class="gradient">Me</span></h2>
+        <p class="section-intro">
+          A little introduction about my academic journey and interests.
+        </p>
+        <div class="grid two-col">
+          <article class="card">
+            <h3>🎓 Education</h3>
+            <p><strong>B.Sc. Software Engineering</strong></p>
+            <p>Daffodil International University (DIU)</p>
+            <p>Major: Data Science</p>
+          </article>
+          <article class="card">
+            <h3>🎯 My Goals</h3>
+            <p>
+              To develop my skills in data analysis, machine learning,
+              and software development while creating practical,
+              data-driven projects that solve real-world problems.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container reveal">
+        <h2 class="section-title">My <span class="gradient">Skills</span></h2>
+        <p class="section-intro">Technologies I use or am currently learning.</p>
+        <div class="card skill-list">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Git & GitHub</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container reveal">
+        <h2 class="section-title">Featured <span class="gradient">Projects</span></h2>
+        <p class="section-intro">
+          A selection of academic and personal projects.
+        </p>
+
+        <div class="filters" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="data">Data Science</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        </div>
+
+        <div class="grid three-col" id="projectGrid">
+          <article class="card project" data-category="data">
+            <div style="font-size:2rem">📊</div>
+            <h3>Student Data Analysis</h3>
+            <p>Explore a dataset, clean data, visualize patterns, and present useful insights.</p>
+            <span class="tag">Python</span><span class="tag">Pandas</span>
+            <div class="project-links">
+              <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card project" data-category="ml">
+            <div style="font-size:2rem">🤖</div>
+            <h3>Machine Learning Prediction</h3>
+            <p>Build and evaluate a classification model using a suitable dataset.</p>
+            <span class="tag">Scikit-learn</span><span class="tag">ML</span>
+            <div class="project-links">
+              <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card project" data-category="web">
+            <div style="font-size:2rem">💻</div>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio with theme switching, animations, and project filters.</p>
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            <div class="project-links">
+              <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container reveal">
+        <div class="card contact-card">
+          <h2 class="section-title">Let's <span class="gradient">Connect</span></h2>
+          <p class="section-intro" style="margin-inline:auto">
+            Have a project idea or want to collaborate? Feel free to reach out.
+          </p>
+          <div class="buttons">
+            <a class="btn primary" href="mailto:hossain2305341406@diu.edu.bd">Send Me an Email ↗</a>
+            <a class="btn" href="https://github.com/ahadhossain406-hub"
+              target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/"
+              target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> MD. Ahad Hossain.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
